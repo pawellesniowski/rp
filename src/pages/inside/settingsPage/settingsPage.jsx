@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
+
+import { PageLayout } from 'layouts/pageLayout';
+
 import { GeneralTab } from './generalTab/index';
 
-export const SettingsPage = () => (
-  <div>
-    <h1>Settings Page</h1>
-    <GeneralTab />
-  </div>
-);
+export class SettingsPage extends Component {
+  render() {
+    return (
+      <PageLayout>
+        <GeneralTab />
+      </PageLayout>
+    );
+  } // end of render
+} // end of class

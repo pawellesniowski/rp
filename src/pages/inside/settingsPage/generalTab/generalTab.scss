@@ -1,17 +1,11 @@
-.dropdownMenu{
-  height: 200px;
+.generalTabContainer {
+  height: 50vh;
 }
 
-:global {
-  .header {
-    color: #fff;
-  }
+.generalTabContent {
+  width: 30vw;
 }
 
-.test {
-  color: red;
-}
-
-.generalComment {
-  color: slategrey;
+.generalTabLabel {
+  display: inline;
 }

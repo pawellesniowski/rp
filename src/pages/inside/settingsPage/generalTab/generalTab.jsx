@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { Input } from '../../../../components/inputs/input';
 
+import styles from './generalTab.scss';
 
 const options = [
   {
@@ -30,10 +32,19 @@ const options = [
 
 
 export class GeneralTab extends Component {
+
   render() {
     return (
-      <div>
-        General Tab
+      <div className={styles.generalTabContainer}>
+        <form className={styles.generalTabContent}>
+          <label className={styles.generalTabLabel}>Name</label>
+          <Input disabled placeholder="artem" />
+
+          <label className={styles.generalTabLabel}>Launch inactivity timeout</label>
+          <Input disabled placeholder="artem" />
+
+        </form>
+
       </div>
     );
   }
