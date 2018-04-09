@@ -1,11 +1,25 @@
+p {
+  color: gray;
+  font-size: 0.8em;
+}
+
+.bigButton {
+  display: block;
+}
+
 .generalTabContainer {
   height: 50vh;
 }
 
 .generalTabContent {
-  width: 30vw;
+
 }
 
 .generalTabLabel {
-  display: inline;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.generalTabDropDown {
+  height: 100px;
 }
