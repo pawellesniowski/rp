@@ -35,9 +35,12 @@ const options = [
   }];
 
 
+
+
 export class GeneralTab extends Component {
 
   render() {
+    console.log("my props: ", this.props);
     return (
       <div className={styles.generalTabContainer}>
         <form className={styles.generalTabContent}>
@@ -45,7 +48,7 @@ export class GeneralTab extends Component {
           <Input disabled placeholder="artem" />
 
           <label className={styles.generalTabLabel}>Launch inactivity timeout</label>
-          <InputDropdown className={styles.generalTabDropDown} options={options} />
+          <InputDropdown className={styles.generalTabDropDown} options={options}/>
           <p>Schedule time for Job to interrupt inactive launches</p>
 
           <label className={styles.generalTabLabel}>Keep logs</label>
@@ -63,10 +66,16 @@ export class GeneralTab extends Component {
           <p>If ON - analysis starts as soon as any launch finished. </p>
           <p>If OFF - not automatic, but can be invoked manually.</p>
 
-          <label className={styles.generalTabLabel}>Base for Auto Analysis</label>
+          <div className={styles.generalTabLabel}>Base for Auto Analysis</div>
+          <label><input type="radio" name="allLaunches" />All launches</label>
+          <p>The test items are analyzed on base of previously investigated data in all launches</p>
+
+          <label><input type="radio" name="allLaunches" />Launches with the same name</label>
+          <p>The test items are analyzed on base of
+            previously investigated data in launches with the same name
+          </p>
 
           <BigButton className={styles.bigButton}>Submit</BigButton>
-
         </form>
 
       </div>

@@ -75,6 +75,7 @@ export class InputDropdown extends Component {
   };
   displayedValue() {
     const { multiple, value, options } = this.props;
+    console.log(this.props);
     let displayedValue;
     if (multiple) {
       return options.filter(option => value.indexOf(option.value) > -1)
