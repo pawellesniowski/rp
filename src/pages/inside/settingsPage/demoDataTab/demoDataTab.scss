@@ -1,0 +1,166 @@
+// MOBILE styling:
+
+// container for tab:
+.demoDataTabContainer {
+  padding: 20px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+// styles for paragraph:  You can generate data only on desktop view.
+.youCanGenerateDat {
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: left;
+  color: $COLOR--charcoal-grey;
+}
+
+// styles for heading:  THE SYSTEM WILL GENERATE THE FOLLOWING DEMO DATA:
+.theSystemWillGene {
+  margin-top: 15px;
+  font-family: OpenSans;
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: $COLOR--gray-47;
+}
+
+// list styling:
+ul {
+  margin: 5px 0 15px 0;
+}
+li {
+  font-family: OpenSans;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.69;
+  letter-spacing: normal;
+  text-align: left;
+  color: $COLOR--charcoal-grey;
+}
+.dot {
+  box-sizing: border-box;
+  margin: 0 0 3px 10px;
+  height: 3px;
+  width: 3px;
+  background-color: $COLOR--windows-blue;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+// end of list styling
+
+
+.prefixWillBeAdd {
+  display: none;
+  font-family: OpenSans;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+  color: $COLOR--charcoal-grey;
+  margin-bottom: 5px;
+}
+.input {
+  display: none;
+  width: 310px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+// button styling:
+button {
+  margin: 0 auto;
+  display: block;
+  width: 153px;
+  height: 30px;
+  background-color: $COLOR--booger;
+  border: none;
+  color: white;
+}
+// button text:
+.generateDemoData {
+  width: 129px;
+  height: 18px;
+  font-family: OpenSans;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: $COLOR--charcoal-grey;
+}
+
+// Warning part styles:
+.icWarning {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+.warning {
+  display: none;
+  width: 57px;
+  height: 18px;
+  font-family: OpenSans;
+  font-size: 13px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $COLOR--failed;
+}
+.youWillHaveToRemove{
+  display: none;
+  font-family: OpenSans;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  color: $COLOR--charcoal-grey;
+}
+
+// end of button styling
+// end of MOBILE styling
+
+
+// DESKTOP styling:
+
+@media (min-width: 690px) {
+  .youCanGenerateDat {
+    display: none;
+  }
+  .postfixWillBeAdd {
+    display: block;
+  }
+  .input {
+    display: inline-block;
+  }
+  button {
+    margin: 0 0 30px 0;
+  }
+  .warning{
+    display: inline-block;
+  }
+  .youWillHaveToRemove{
+    display: inline;
+  }
+
+}

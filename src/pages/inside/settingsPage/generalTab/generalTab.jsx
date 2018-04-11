@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { Input } from '../../../../components/inputs/input';
 
 import styles from './generalTab.scss';
-import {InputDropdown} from "../../../../components/inputs/inputDropdown";
-import {InputBigSwitcher} from "../../../../components/inputs/inputBigSwitcher";
-import {BigButton} from "../../../../components/buttons/bigButton";
+import { InputDropdown } from '../../../../components/inputs/inputDropdown';
+import { InputBigSwitcher } from '../../../../components/inputs/inputBigSwitcher';
+import { BigButton } from '../../../../components/buttons/bigButton';
 
 
 const options = [
@@ -40,7 +40,7 @@ const options = [
 export class GeneralTab extends Component {
 
   render() {
-    console.log("my props: ", this.props);
+
     return (
       <div className={styles.generalTabContainer}>
         <form className={styles.generalTabContent}>
@@ -52,7 +52,7 @@ export class GeneralTab extends Component {
           <p>Schedule time for Job to interrupt inactive launches</p>
 
           <label className={styles.generalTabLabel}>Keep logs</label>
-          <InputDropdown className={styles.generalTabDropDown} options={options} />
+          <InputDropdown className={styles.generalTabDropDown} options={options} value="AI" />
           <p>How long to keep old logs in launches.
             Related launches structure will be saved, in order to keep statistics
           </p>
@@ -82,4 +82,3 @@ export class GeneralTab extends Component {
     );
   }
 }
-
