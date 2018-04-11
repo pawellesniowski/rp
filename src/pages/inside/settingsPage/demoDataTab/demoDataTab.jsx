@@ -25,14 +25,14 @@ export const DemoDataTab = () => (
       <span className={styles.generateDemoData}>Generate Demo Data</span>
     </button>
     <div>
-    <img
-      src="img/ic-warning.png"
-      srcSet="img/ic-warning@2x.png 2x,
-             img/ic-warning@3x.png 3x"
-      className={styles.icWarning}
-      alt="Warning sign"
-    />
-    <p className={styles.warning}>Warning</p>
+      <img
+        src="img/ic-warning.png"
+        srcSet="img/ic-warning@2x.png 2x,
+               img/ic-warning@3x.png 3x"
+        className={styles.icWarning}
+        alt="Warning sign"
+      />
+      <p className={styles.warning}>Warning</p>
     </div>
     <p className={styles.youWillHaveToRemove}>
       You will have to remove the demo data manually.

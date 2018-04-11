@@ -1,4 +1,4 @@
-// MOBILE styling:
+// MOBILE styling goes first:
 
 // container for tab:
 .demoDataTabContainer {
@@ -142,7 +142,6 @@ button {
 
 
 // DESKTOP styling:
-
 @media (min-width: 690px) {
   .youCanGenerateDat {
     display: none;
