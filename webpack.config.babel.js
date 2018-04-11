@@ -116,6 +116,7 @@ export default (env = defaultEnv) => ({
             {
               loader: 'css-loader',
               options: {
+                sourceMap: true,
                 modules: true,
                 alias: {
                   common: path.resolve(__dirname, 'src/common'),
@@ -124,11 +125,22 @@ export default (env = defaultEnv) => ({
                 localIdentName: '[name]__[local]___[hash:base64:5]',
               },
             },
-            'postcss-loader',
-            'sass-loader',
+            {
+              loader: 'postcss-loader',
+              options: {
+                sourceMap: true,
+              },
+            },
+            {
+              loader: 'sass-loader',
+              options: {
+                sourceMap: true,
+              },
+            },
             {
               loader: 'sass-resources-loader',
               options: {
+                sourceMap: true,
                 resources: path.resolve(__dirname, 'src/common/css/variables/**/*.scss'),
               },
             },
